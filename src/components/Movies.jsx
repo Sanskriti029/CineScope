@@ -4,11 +4,11 @@ import { useEffect } from "react";
 import axios from "axios";
 import Pagination from "./pagination";
 
-function Movies() {
+function Movies({handleAddtoWatchList ,handleRemoveFromWatchList,watchlist}) {
   const [movies, Setmovies] = useState([]);
   const [pageNo, SetpageNo] = useState(1);
 
-  const handleprevious = () => {
+  const handleprevious  = () => {
     if(pageNo==1){
       SetpageNo(pageNo)
     }
@@ -38,9 +38,13 @@ function Movies() {
       <div className="flex flex-row flex-wrap m-10 mb-10 gap-2 justify-around">
         {movies.map((movieObj) => {
           return (
-            <Card
+            <Card key ={movieObj.id}
+              movieObj={movieObj}
               poster_path={movieObj.poster_path}
               name={movieObj.original_title}
+              handleAddtoWatchList={handleAddtoWatchList}
+              handleRemoveFromWatchList={handleRemoveFromWatchList}
+              watchlist={watchlist}
             />
           );
         })}

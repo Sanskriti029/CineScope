@@ -31,7 +31,7 @@ Users can explore popular movies, search for films, and view detailed informatio
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/imdb-clone.git
+https://github.com/Sanskriti029/Film-Vault
 ```
 2.Navigate to the project directory:
 ```bash

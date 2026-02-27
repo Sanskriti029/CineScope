@@ -1,16 +1,96 @@
-# React + Vite
+# 🎬 Film Vault (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An IMDb-inspired movie browsing web application built using **React**.  
+Users can explore popular movies, search for films, and view detailed information such as ratings, release dates, and overviews using a public movie API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 Search movies by title  
+- 🎞️ Browse popular and trending movies  
+- 📄 View movie details (poster, rating, overview, release date)  
+- ❤️ Add to favorites/watchlist (if implemented)  
+- 📱 Responsive design  
+- ⚡ Fast and dynamic UI with React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React  
+- JavaScript (ES6)  
+- CSS / Tailwind  
+- Movie API (TMDB or OMDb)  
+- Axios / Fetch API  
+- React Router  
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/imdb-clone.git
+```
+2.Navigate to the project directory:
+```bash
+cd imdb-clone
+```
+3.Install dependencies:
+```bash
+npm install
+```
+4.Create a .env file in the root folder and add your API key:
+```bash
+REACT_APP_API_KEY=your_api_key_here
+```
+5.Run the application:
+```bash
+npm start
+```
+🌐 API Used
+
+This project uses a public movie API such as:
+
+TMDB API -https://www.themoviedb.org/documentation/api
+
+
+📂 Project Structure
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── App.js
+ ├── index.js
+ └── styles/
+```
+
+
+📌 Future Enhancements
+
+* User authentication
+
+* Watchlist saved to database
+
+* Trailer integration
+
+* Dark mode
+
+* Pagination / infinite scroll
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Fork the repository and submit a pull request.
+
+## 📜 License
+
+This project is for educational purposes only.
+Not affiliated with IMDb.
+
+## 👨‍💻 Author
+
+Your Name
+GitHub: https://github.com/Sanskriti@029

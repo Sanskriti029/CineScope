@@ -45,6 +45,7 @@ function Movies({handleAddtoWatchList ,handleRemoveFromWatchList,watchlist}) {
               handleAddtoWatchList={handleAddtoWatchList}
               handleRemoveFromWatchList={handleRemoveFromWatchList}
               watchlist={watchlist}
+              g
             />
           );
         })}

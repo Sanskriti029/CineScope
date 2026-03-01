@@ -1,12 +1,22 @@
 import React from 'react'
 
-function Banner() {
+function Banner({ movieObj }) {
+  if (!movieObj) {
+    return null; // Don't render until movieObj is loaded
+  }
+
   return (
-    <div  className='h-[80vh] bg-cover bg-center flex items-end' style={{backgroundImage :'url(https://i.pinimg.com/736x/29/7d/e0/297de0761b0c756266d74ca50d03cc1d.jpg)'}}> 
+
     
-    <div className=' text-white text-xl bg-gray-900/60 w-full text-center p-2' >
-        Avengers Endgame
-    </div>
+    <div 
+      className='h-[80vh] bg-cover bg-center flex items-end' 
+      style={{
+        backgroundImage: `url('https://image.tmdb.org/t/p/w1280${movieObj.backdrop_path}')`,
+      }}
+    > 
+      <div className='text-white text-xl bg-gray-900/60 w-full text-center p-2'>
+        {movieObj.title || movieObj.original_title}
+      </div>
     </div>
   )
 }

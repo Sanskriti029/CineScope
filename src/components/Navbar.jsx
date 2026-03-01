@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../MovieLogo.png";
-import {Link} from 'react-router'
+import Logo from "../MovieLogo.svg";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (

@@ -2,7 +2,7 @@ import "./App.css";
 import Movies from "./components/Movies";
 import Navbar from "./components/navbar";
 import WatchList from "./components/WatchList";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Banner from "./components/Banner";
 
 function App() {

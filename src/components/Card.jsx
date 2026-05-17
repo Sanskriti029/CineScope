@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import WatchList from "./WatchList";
 function Card({
   movieObj,
   poster_path,
